@@ -1,8 +1,11 @@
 {
+  "homepage": "https://peareon.github.io/Portfolio",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -22,6 +25,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.15",
     "concurrently": "^8.2.1",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.29",
     "tailwindcss": "^3.3.3"
   }

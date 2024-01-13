@@ -16,7 +16,7 @@ export default function Navbar(){
                     <li><a href="#projects" className="hover:text-gray-950 hover:text-[17px]">Projects</a></li>
                     <li><a href="#experience" className="hover:text-gray-950 hover:text-[17px]">Experience</a></li>
                     <li><a href="#contacto" className="hover:text-gray-950 hover:text-[17px]">Contact</a></li>
-                    <li><a href="/images/Blog_Preview.gif" download={true} className="hover:text-gray-950 hover:text-[17px]">Resume</a></li>
+                    <li><a href="/CV.pdf" download={true} className="hover:text-gray-950 hover:text-[17px]">Resume</a></li>
                 </ul>
             </div>
             <div className="sm:hidden flex flex-1 justify-end items-center">

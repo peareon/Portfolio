@@ -82,7 +82,7 @@ export const experience = [
         role2: "RPA Dev",
         tasks: [
             "• Processes automation through Python",
-            '• Automated:  Web scraping, query updates and report generation',
+            '• Automated Web scraping, query updates and report generation',
             '• Processes review and design',
         ],
         position: "self-start",
@@ -96,7 +96,7 @@ export const experience = [
         tasks: [
             "• Test cases execution and test report generation",
             '• Requirements review and test case creation',
-            '• Detailed ticket creation of bugs',
+            '• Detailed creation & log of tickets containing bugs',
         ],
         position: "self-end",
         imgpos: "right",
