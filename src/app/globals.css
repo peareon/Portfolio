@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* @font-face {
+  font-family: 'Hedvig';
+  font-style: normal;
+  font-weight: 400;
+  src: url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+} */
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,15 +24,7 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+
 
 .scrollhide{
   -ms-overflow-style: none;  /* IE and Edge */
@@ -33,4 +33,32 @@ body {
 
 .scrollhide::-webkit-scrollbar{
   display: none;
+}
+
+.text-outline-stroke {
+  -webkit-text-stroke: 0.15px black;
+}
+
+.frame{
+  -webkit-mask:
+    conic-gradient(at 10px 10px,#0000 75%,#000 0)
+    0 0/calc(100% - 10px) calc(100% - 10px),
+    linear-gradient(#000 0 0) content-box;
+}
+
+.unveil:hover{
+  animation: 0.5s ease-out forwards slidein;
+}
+
+@keyframes slidein{
+  0%{
+    opacity: 1;
+  }
+  40%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 0;
+  }
+
 }

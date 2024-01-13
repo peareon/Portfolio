@@ -1,4 +1,5 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 const config: Config = {
   content: [
@@ -9,14 +10,19 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'ceramic-bg': "url('/img/hero-pattern.svg')",
-        'music-bg': "url('/img/hero-pattern.svg')",
-        'can-bg': "url('/img/hero-pattern.svg')",
-        'blog-bg': "url('/img/hero-pattern.svg')",
+        'DHL-bg': "url('/images/DHL.jpg')",
+        'Alten-bg': "url('/images/Alten.jpg')",
+        'TATA-bg': "url('/images/TATA.jpg')",
+        'Wb-bg': "url('/images/Wg.jpg')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+        Hedvig: ['"Hedvig Letters"', ...defaultTheme.fontFamily.sans],
+        Garamond : ['"EB Garamond"', ...defaultTheme.fontFamily.sans]
+        
+      }
     },
   },
   plugins: [],
