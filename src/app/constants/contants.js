@@ -40,7 +40,7 @@ export const items = [{
         id: "CAN",
         title: "CAN-reveal",
         background: "E5E7E7",
-        demo: "/images/CAN_Preview.gif",
+        demo: "/images/can_preview.gif",
         github: "https://github.com/peareon/CAN_Tool",
         description: "This is a specialized tool, which purpose is to highlight the pieces of CAN/RV-C data that changed their previous state to another state on almost real-time. This tool works along a CAN decoder, a data filter and FAST API.",
         technologies: [
@@ -58,7 +58,7 @@ export const items = [{
         id: "Travel",
         title: "Travel blog",
         background: "1e566c",
-        demo: "/images/Blog_Preview.gif",
+        demo: "/images/blog_preview.gif",
         github: "https://github.com/peareon/OnlineBlog",
         description: "This simple travel blog has some cool features, such as Login and Register amongst validation, password encrypting, and security cookies, and the possibility to create new posts on the client-side. The posts and users registered are stored in a mongo db.",
         technologies: [
