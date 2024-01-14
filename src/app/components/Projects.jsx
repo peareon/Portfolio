@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import {items} from '../constants/contants.js'
 import { FaGithub } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
+import Image from 'next/image';
 
 export default function Projects(){
 
@@ -49,13 +50,14 @@ export default function Projects(){
         return () => document.body.removeEventListener('wheel', cancelWheel)     
       }, []);
     return(
-        <div id="projects" onWheel={onwheel} className={`h-[100vh] scrollhide items-center overflow-scroll snap-mandatory scroll-smooth custom-scroll bg-[#${items[index].background}] bg-opacity-[.2]`}>
+        <div id="projects" onWheel={onwheel} className={`h-[100vh] scrollhide items-center overflow-scroll snap-mandatory scroll-smooth custom-scroll bg-[#808080] bg-opacity-[.2]`}>
             <section className="relative snap-start flex flex-col h-[100%]">
                 <div className="self-center mt-[2%] text-[17px] md:text-[20px] lg:text-[26px]">Projects</div>
                 <div className={`flex md:flex-row flex-col h-[70%] w-full items-center justify-evenly px-[20px] gap-[100px] md:mt-[-30px] mt-[25px]`}>
                     <div className="md:mr-[-140px] mr-0">
 
-                        <img className="lg:w-[480px] md:w-[360px] w-[330px]" src={items[index].demo} alt="image" />
+                        <Image className="lg:w-[480px] md:w-[360px] w-[330px]" src={items[index].demo} alt="image" width={500} height={480}/>
+                        {/* <img className="lg:w-[480px] md:w-[360px] w-[330px]" src={items[index].demo} alt="image" /> */}
                     </div>
                     <div className="md:h-[285px] sm:h-[175px] h-[215px] flex flex-col justify-evenly md:max-w-[27%] w-[70%] md:mt-0 mt-[-100px]">
                         <div className="lg:mt-[0] lg:pb-[25px] md:mt-[35px] pb-[10px] font-Garamond lg:text-[20px] md:text-[15px] text-center">{items[index].title}</div>
