@@ -12,9 +12,9 @@ export default function Main(){
                 <div className="text-stone-700 xl:text-2xl sm:text-xl text-xs">
                     Your next fullstack developer
                 </div>
-                <div className="text-stone-700 xl:text-2xl sm:text-xl text-xs">
+                {/* <div className="text-stone-700 xl:text-2xl sm:text-xl text-xs">
                     Some cool idea
-                </div>
+                </div> */}
             </div>
         </div>
     )

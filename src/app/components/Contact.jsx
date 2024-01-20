@@ -57,8 +57,8 @@ export default function Contact(){
             <p className="lg:text-[50px] md:text-[40px] text-[30px]">In touch</p>
             <p className="pt-[15px] text-justify md:text-[15px] lg:text-[18px] text-[14px]">If you want to talk about a project, collaboration or a job offer, fill up the fields :D</p>
             <div className="flex flex-row gap-7 pt-[35px]">
-              <a href="https://www.linkedin.com/in/alejandro-emmanuel-peralta-d%C3%ADaz-a05381130/" target="_blank"><FaLinkedin /></a>
-              <a href="https://www.instagram.com/alemperd/" target="_blank"><FaInstagram /></a>
+              <a href="https://www.linkedin.com/in/alejandro-emmanuel-peralta-d%C3%ADaz-a05381130/" target="_blank"><FaLinkedin className="lg:scale-150 md:scale-125 scale-100" /></a>
+              <a href="https://www.instagram.com/alemperd/" target="_blank"><FaInstagram className="lg:scale-150 md:scale-125 scale-100" /></a>
             </div>
           </div>
           <form ref={formRef} onSubmit={handleSubmit}

@@ -91,11 +91,11 @@ export const experience = [
     },
     {
         job: "Alten",
-        role: "QA",
-        role2: "QA",
+        role: "HiL",
+        role2: "HiL",
         tasks: [
-            "• Test cases execution and test report generation",
-            '• Requirements review and test case creation',
+            "• Atomated Test cases execution and test report generation",
+            '• Requirements review and creation of automated test cases',
             '• Detailed creation & log of tickets containing bugs',
         ],
         position: "self-end",
