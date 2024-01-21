@@ -11,7 +11,14 @@ export default function Projects(){
     const [index, setIndex] = useState(0);
     
     const lock = useRef();
+    lock.current = true;
     const wheelTimeout = useRef();
+
+    function setIndexB(index){
+        console.log("lol")
+        setIndex(index);
+    }
+
     const onwheel = e => {
         // ... some code I needed ...
         // while wheel is moving, do not release the lock
@@ -50,7 +57,7 @@ export default function Projects(){
         return () => document.body.removeEventListener('wheel', cancelWheel)     
       }, []);
     return(
-        <div id="projects" onWheel={onwheel} className={`h-[100vh] scrollhide items-center overflow-scroll snap-mandatory scroll-smooth custom-scroll bg-[#808080] bg-opacity-[.2]`}>
+        <div id="projects" onWheel={onwheel} className={`h-[100vh] scrollhide items-center overflow-scroll snap-mandatory scroll-smooth custom-scroll bg-[#808080] bg-opacity-[.2] scrollhide`}>
             <section className="relative snap-start flex flex-col h-[100%]">
                 <div className="self-center mt-[2%] text-[17px] md:text-[20px] lg:text-[26px]">Projects</div>
                 <div className={`flex md:flex-row flex-col h-[70%] w-full items-center justify-evenly px-[20px] gap-[100px] md:mt-[-30px] mt-[25px]`}>
@@ -75,11 +82,11 @@ export default function Projects(){
                         <div key={tech.tech} className="">{tech.tech}</div>
                     ))}
                 </div>
-                <div className="flex flex-row self-center gap-7 absolute bottom-16">
-                        <span className={`h-[5px] w-[5px] ${index == 0 ? "bg-black": "bg-slate-400" } rounded-[50%] inline-block`}></span>
-                        <span className={`h-[5px] w-[5px] ${index == 1 ? "bg-black": "bg-slate-400" } rounded-[50%] inline-block`}></span>
-                        <span className={`h-[5px] w-[5px] ${index == 2 ? "bg-black": "bg-slate-400" } rounded-[50%] inline-block`}></span>
-                        <span className={`h-[5px] w-[5px] ${index == 3 ? "bg-black": "bg-slate-400" } rounded-[50%] inline-block`}></span> 
+                <div className="flex flex-row self-center gap-7 absolute md:bottom-16 bottom-10">
+                        <span className={`h-[7px] w-[7px] ${index == 0 ? "bg-black": "bg-slate-400" } rounded-[50%] inline cursor-pointer`}><button className="inline h-[7px] w-[7px] absolute" onClick={() => setIndexB(0)}></button></span>
+                        <span className={`h-[7px] w-[7px] ${index == 1 ? "bg-black": "bg-slate-400" } rounded-[50%] inline cursor-pointer`}><button className="inline h-[7px] w-[7px] absolute" onClick={() => setIndexB(1)}></button></span>
+                        <span className={`h-[7px] w-[7px] ${index == 2 ? "bg-black": "bg-slate-400" } rounded-[50%] inline cursor-pointer`}><button className="inline h-[7px] w-[7px] absolute" onClick={() => setIndexB(2)}></button></span>
+                        <span className={`h-[7px] w-[7px] ${index == 3 ? "bg-black": "bg-slate-400" } rounded-[50%] inline cursor-pointer`}><button className="inline h-[7px] w-[7px] absolute" onClick={() => setIndexB(3)}></button></span> 
                 </div>
                 
             </section>

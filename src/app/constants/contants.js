@@ -3,7 +3,7 @@ export const items = [{
     title: "ANRAMO",
     background: "CD5C08",
     demo: "/images/pottery_preview.gif",
-    website: "https://lol",
+    website: "https://anramo.onrender.com",
     github: "https://github.com/peareon/pottery",
     description: "ANRAMO is an e-commerce pottery website. \n This website was developed with vanilla Javascript and no CSS frameworks or libraries. The store page is populated directly from an Atlas server, and it is updated after every purchase",
     technologies: [

@@ -51,7 +51,7 @@ export default function Contact(){
     }
   
     return (
-      <div id="contacto" className="xl:flex-row mb-0 flex overflow-hidden py-[80px] md:gap-[100px] gap-[50px] justify-center bg-[#e2e9e9] h-[100vh]">
+      <div id="contacto" className="xl:flex-row mb-0 flex overflow-hidden py-[80px] md:gap-[100px] gap-[50px] justify-center bg-[#e2e9e9] h-[100vh] scrollhide">
           <div className="flex flex-col justify-center lg:max-w-[15%] md:max-w-[20%] max-w-[23%] mt-[-6%]">
             <p className="lg:text-[60px] md:text-[50px] text-[40px]">Get</p>
             <p className="lg:text-[50px] md:text-[40px] text-[30px]">In touch</p>

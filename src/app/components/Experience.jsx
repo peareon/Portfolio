@@ -3,7 +3,7 @@ import { experience } from "../constants/contants.js";
 
 export default function Experience(){
     return(
-        <div id="experience" className="bg-[#F1F1F1] relative h-[100vh] bg-opacity-[1] md:py-[50px] sm:py-[100px] py-[125px]">
+        <div id="experience" className="bg-[#F1F1F1] relative h-[100vh] bg-opacity-[1] md:py-[50px] sm:py-[100px] py-[125px] scrollhide">
             <div className="flex lg:px-40 md:px-20 px-8 h-[100%] flex-col md:justify-between justify-center">
                 <h2 className="flex justify-center md:text-[26px] text-[17px] pb-11 font-Hedvig"> Job Experience </h2>
 

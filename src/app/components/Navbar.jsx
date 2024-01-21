@@ -9,7 +9,7 @@ export default function Navbar(){
     const [toggle, setToggle] = useState(false);
 
     return(
-        <nav className="flex flex-row h-[100px] px-[20px] justify-between bg-slate-50 pr-[40px]">
+        <nav className="flex flex-row h-[100px] px-[20px] justify-between bg-slate-50 pr-[40px] scrollhide">
             <div className="items-center flex w-[170px]"><img className="h-[170px] w-[170px]" src="/images/logo.png" alt="" /></div>
             <div className="flex items-center">
                 <ul className="sm:flex hidden flex-1 gap-10 text-gray-600 text-[16px]">
