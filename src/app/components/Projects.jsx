@@ -63,7 +63,8 @@ export default function Projects(){
                 <div className={`flex md:flex-row flex-col h-[70%] w-full items-center justify-evenly px-[20px] gap-[100px] md:mt-[-30px] mt-[25px]`}>
                     <div className="md:mr-[-140px] mr-0">
 
-                        <Image className="lg:w-[480px] md:w-[360px] w-[330px]" src={items[index].demo} alt="image" width={500} height={480}/>
+                        <video src={items[index].demo} autoPlay muted loop className="xl:w-[740px] lg:w-[540px] md:w-[420px] w-[330px]"></video>
+                        {/* <Image className="lg:w-[480px] md:w-[360px] w-[330px]" src={items[index].demo} alt="image" width={500} height={480}/> */}
                         {/* <img className="lg:w-[480px] md:w-[360px] w-[330px]" src={items[index].demo} alt="image" /> */}
                     </div>
                     <div className="md:h-[285px] sm:h-[175px] h-[215px] flex flex-col justify-evenly md:max-w-[27%] w-[70%] md:mt-0 mt-[-100px]">
