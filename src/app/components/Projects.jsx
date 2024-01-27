@@ -63,11 +63,9 @@ export default function Projects(){
                 <div className={`flex md:flex-row flex-col h-[70%] w-full items-center justify-evenly px-[20px] gap-[100px] md:mt-[-30px] mt-[25px]`}>
                     <div className="md:mr-[-140px] mr-0">
 
-                        <video src={items[index].demo} autoPlay muted loop className="xl:w-[740px] lg:w-[540px] md:w-[420px] w-[330px]"></video>
-                        {/* <Image className="lg:w-[480px] md:w-[360px] w-[330px]" src={items[index].demo} alt="image" width={500} height={480}/> */}
-                        {/* <img className="lg:w-[480px] md:w-[360px] w-[330px]" src={items[index].demo} alt="image" /> */}
+                        <video key={items[index].title} src={items[index].demo} autoPlay muted loop className="xl:w-[740px] lg:w-[540px] md:w-[420px] w-[330px] animate-presentation"></video>
                     </div>
-                    <div className="md:h-[285px] sm:h-[175px] h-[215px] flex flex-col justify-evenly md:max-w-[27%] w-[70%] md:mt-0 mt-[-100px]">
+                    <div key={items[index].id} className="md:h-[285px] sm:h-[175px] h-[215px] flex flex-col justify-evenly md:max-w-[27%] w-[70%] md:mt-0 mt-[-100px] animate-presentation">
                         <div className="lg:mt-[0] lg:pb-[25px] md:mt-[35px] pb-[10px] font-Garamond lg:text-[20px] md:text-[15px] text-center">{items[index].title}</div>
                         <div className="text-justify frame m-auto lg:mt-0 py-[25px] px-[25px] outline-[2px] outline-offset-[-2px] outline outline-[#FFF] lg:text-[15px] md:text-[12px] text-[11px]">
                             {items[index].description} 
@@ -78,7 +76,7 @@ export default function Projects(){
                         </div>
                     </div>
                 </div>
-                <div className="frame flex flex-row items-center justify-center md:gap-7 gap-3 lg:w-[19%] md:w-[25%] sm:w-[30%] w-[37%] m-auto mt-0 py-[15px] px-[5px] outline-[2px] outline-offset-[-2px] outline outline-purple-400 lg:text-[13px] md:text-[11px] text-[10.5px]">
+                <div key={items[index].title} className="frame flex flex-row items-center justify-center md:gap-7 gap-3 lg:w-[19%] md:w-[25%] sm:w-[30%] w-[37%] m-auto mt-0 py-[15px] px-[5px] outline-[2px] outline-offset-[-2px] outline outline-purple-400 lg:text-[13px] md:text-[11px] text-[10.5px] animate-presentation">
                     {items[index].technologies.map(tech =>(
                         <div key={tech.tech} className="">{tech.tech}</div>
                     ))}

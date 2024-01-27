@@ -22,7 +22,24 @@ const config: Config = {
         Hedvig: ['"Hedvig Letters"', ...defaultTheme.fontFamily.sans],
         Garamond : ['"EB Garamond"', ...defaultTheme.fontFamily.sans]
         
+      },
+      keyframes: {
+        presentation: {
+        '10%':
+          {transform: 'scale(1, 0.002)'},
+        '35%':
+        {transform: 'scale(0.2, 0.002)', opacity: '1'},
+        '50%':
+          {transform: 'scale(0.2, 0.002)', opacity: '0'},
+        '85%':
+          {transform: 'scale(1, 0.002)', opacity: '1'},
+        '100%':
+          {transform: 'scale(1, 1)'}
       }
+    },
+    animation:{
+      presentation: 'presentation 1500ms ease-in-out'
+    }
     },
   },
   plugins: [],
