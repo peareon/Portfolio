@@ -38,7 +38,7 @@ const config: Config = {
       }
     },
     animation:{
-      presentation: 'presentation 1500ms ease-in-out'
+      presentation: 'presentation 800ms ease-in-out'
     }
     },
   },
