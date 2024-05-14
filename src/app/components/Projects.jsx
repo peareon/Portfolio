@@ -67,7 +67,7 @@ export default function Projects(){
     //     return () => document.body.removeEventListener('wheel', cancelWheel)     
     //   }, []);
     return(
-        <div id="projects" onWheel={onwheel} className={`h-[100vh] scrollhide items-center overflow-scroll snap-mandatory scroll-smooth custom-scroll bg-[#808080] bg-opacity-[.2] scrollhide`}>
+        <div id="projects" /*onWheel={onwheel}*/ className={`h-[100vh] scrollhide items-center overflow-scroll snap-mandatory scroll-smooth custom-scroll bg-[#808080] bg-opacity-[.2] scrollhide`}>
             <section className="relative snap-start flex flex-col h-[100%]">
                 <div className="self-center mt-[2%] text-[17px] md:text-[20px] lg:text-[26px]">Projects</div>
                 <div className={`flex md:flex-row flex-col h-[70%] w-full items-center justify-around px-[20px] gap-[100px] md:mt-[-30px] mt-[25px]`}>
