@@ -2,9 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import {items} from '../constants/contants.js'
-import { FaGithub, FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaGithub, FaArrowLeft, FaArrowRight} from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
-import Image from 'next/image';
 
 export default function Projects(){
 
@@ -70,29 +69,31 @@ export default function Projects(){
         <div id="projects" /*onWheel={onwheel}*/ className={`h-[100vh] scrollhide items-center overflow-scroll snap-mandatory scroll-smooth custom-scroll bg-[#808080] bg-opacity-[.2] scrollhide`}>
             <section className="relative snap-start flex flex-col h-[100%]">
                 <div className="self-center mt-[2%] text-[17px] md:text-[20px] lg:text-[26px]">Projects</div>
-                <div className={`flex md:flex-row flex-col h-[70%] w-full items-center justify-around px-[20px] gap-[100px] md:mt-[-30px] mt-[25px]`}>
-                    <div className="ml-[100px] cursor-pointer" onClick={() => setIndexAL()}><FaArrowLeft /></div>
-                    <div className="md:mr-[-75px] mr-0">
-                        <video key={items[index].title} src={items[index].demo} autoPlay muted loop className="xl:w-[740px] lg:w-[540px] md:w-[420px] w-[330px] animate-presentation"></video>
-                    </div>
-                    <div key={items[index].id} className="md:h-[285px] sm:h-[175px] h-[215px] flex flex-col justify-evenly md:max-w-[27%] w-[70%] md:mt-0 mt-[-100px] animate-presentation">
-                        <div className="lg:mt-[0] lg:pb-[25px] md:mt-[35px] pb-[10px] font-Garamond lg:text-[20px] md:text-[15px] text-center">{items[index].title}</div>
-                        <div className="text-justify frame m-auto lg:mt-0 py-[25px] px-[25px] outline-[2px] outline-offset-[-2px] outline outline-[#FFF] lg:text-[15px] md:text-[12px] text-[11px]">
-                            {items[index].description} 
+                <div className={`flex flex-row h-[70%] w-full items-center justify-around px-[20px] gap-[100px] sm:mt-[-25px] md:mt-[5px] mt-[25px`}>
+                    <div className="sm:mr-[-60px] md:mr-[-80px] sm:ml-[50px] md:ml-[40px] xl:ml-[105px] cursor-pointer" onClick={() => setIndexAL()}><FaArrowLeft /></div>
+                    <div className="flex md:flex-row flex-col h-[68%] w-full items-center justify-around px-[20px] gap-[100px] md:mt-[15px] mt-[25px]">
+                        <div className="md:mr-[-75px] sm:m-0 sm:ml-0  sm:p-0 sm:w-auto w-[152%]">
+                            <video key={items[index].title} src={items[index].demo} autoPlay muted loop className="xl:w-[740px] lg:w-[540px] md:w-[420px] sm:w-[340px] animate-presentation"></video>
                         </div>
-                        <div className="flex flex-row gap-[20px] pt-[12px] self-center">
-                            <a href={items[index].github} target="_blank"><FaGithub/></a>
-                            {items[index].website ? <a href={items[index].website} target="_blank"><CgWebsite/></a> : null}
+                        <div key={items[index].id} className="md:h-[285px] sm:h-[175px] h-[215px] flex flex-col justify-evenly md:max-w-[30%] w-[70%] sm:mt-[-50px] md:mt-0 mt-[-100px] animate-presentation">
+                            <div className="lg:mt-[0] lg:pb-[25px] sm:mt-[35px] mt-[30px] pb-[7x] font-Garamond lg:text-[20px] md:text-[15px] text-center">{items[index].title}</div>
+                            <div className="text-justify frame m-auto lg:mt-0 py-[25px] px-[25px] outline-[2px] outline-offset-[-2px] outline outline-[#FFF] xl:text-[15px] lg:text-[13px] md:text-[10px] text-[11px] hidden sm:block">
+                                {items[index].description} 
+                            </div>
+                            <div className="flex flex-row gap-[20px] pt-[12px] self-center min-w-[60%] justify-center">
+                                <a href={items[index].github} target="_blank"><FaGithub/></a>
+                                {items[index].website ? <a href={items[index].website} target="_blank"><CgWebsite/></a> : null}
+                            </div>
                         </div>
                     </div>
-                    <div className="mr-[100px] cursor-pointer" onClick={() => setIndexAR()}><FaArrowRight /></div>
+                    <div className="sm:ml-[-60px] md:ml-[-80px] sm:mr-[50px] md:mr-[40px] xl:mr-[105px] cursor-pointer" onClick={() => setIndexAR()}><FaArrowRight /></div>
                 </div>
-                <div key={items[index].title} className="frame flex flex-row items-center justify-center md:gap-7 gap-3 lg:w-[19%] md:w-[25%] sm:w-[30%] w-[37%] m-auto mt-0 py-[15px] px-[5px] outline-[2px] outline-offset-[-2px] outline outline-purple-400 lg:text-[13px] md:text-[11px] text-[10.5px] animate-presentation">
+                <div key={items[index].title} className="flex flex-row items-center justify-center md:gap-7 gap-3 lg:w-[20%] md:w-[25%] sm:w-[30%] w-[37%] m-auto md:mt-[-20px] sm:mt-[30px] mt-[8px] py-[15px] px-[5px]  lg:text-[22px] md:text-[19px] text-[15px] animate-presentation">
                     {items[index].technologies.map(tech =>(
                         <div key={tech.tech} className="">{tech.tech}</div>
                     ))}
                 </div>
-                <div className="flex flex-row self-center gap-7 absolute md:bottom-16 bottom-10">
+                <div className="flex flex-row self-center gap-7 absolute md:bottom-12 bottom-10">
                         <span className={`h-[7px] w-[7px] ${index == 0 ? "bg-black": "bg-slate-400" } rounded-[50%] inline cursor-pointer`}><button className="inline h-[7px] w-[7px] absolute" onClick={() => setIndexB(0)}></button></span>
                         <span className={`h-[7px] w-[7px] ${index == 1 ? "bg-black": "bg-slate-400" } rounded-[50%] inline cursor-pointer`}><button className="inline h-[7px] w-[7px] absolute" onClick={() => setIndexB(1)}></button></span>
                         <span className={`h-[7px] w-[7px] ${index == 2 ? "bg-black": "bg-slate-400" } rounded-[50%] inline cursor-pointer`}><button className="inline h-[7px] w-[7px] absolute" onClick={() => setIndexB(2)}></button></span>

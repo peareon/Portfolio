@@ -1,3 +1,9 @@
+import { FaReact, FaPython } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
+import { SiMongodb, SiFastapi, SiTailwindcss } from "react-icons/si";
+import { IoLogoNodejs } from "react-icons/io5";
+import { IoLogoJavascript } from "react-icons/io";
+
 export const items = [{
     id: "ecommerce",
     title: "ANRAMO",
@@ -8,13 +14,13 @@ export const items = [{
     description: "ANRAMO is an e-commerce pottery website. \n This website was developed with vanilla Javascript and no CSS frameworks or libraries. The store page is populated directly from an Atlas server, and it is updated after every purchase",
     technologies: [
         {
-        tech: "Vanilla JS"
+        tech: <IoLogoJavascript />
         },
         {
-        tech: "Node"
+        tech: <IoLogoNodejs />
         },
         {
-        tech: "Mongo"
+        tech: <SiMongodb />
         }]
     },
     {
@@ -27,49 +33,49 @@ export const items = [{
         description: "Looking for new music related to an artist? This app, with Spotify's API help, will find those songs related based on how 'popular' you want the songs to be. The popularity feature allows to aim for undiscovered gems or go straight for consolidated hits",
         technologies: [
             {
-            tech: "React"
+            tech: <FaReact/>
             },
             {
-            tech: "Next JS"
+            tech: <TbBrandNextjs />
             },
             {
-            tech: "Tailwind"
+            tech: <SiTailwindcss />
             }]
     },
     {
         id: "CAN",
-        title: "CAN-reveal",
+        title: "CAN-Reveal",
         background: "E5E7E7",
         demo: "/images/can_preview_720.mp4",
         github: "https://github.com/peareon/CAN_Tool",
         description: "This is a specialized tool, which purpose is to highlight the pieces of CAN/RV-C data that changed their previous state to another state on almost real-time. This tool works along a CAN decoder, a data filter and FAST API.",
         technologies: [
             {
-            tech: "Python"
+            tech: <FaPython />
             },
             {
-            tech: "React"
+            tech: <FaReact/>
             },
             {
-            tech: "Fast API"
+            tech: <SiFastapi />
             }]
     },
     {
         id: "Travel",
-        title: "Travel blog",
+        title: "Travel Blog",
         background: "1e566c",
         demo: "/images/blog_preview_720.mp4",
         github: "https://github.com/peareon/OnlineBlog",
         description: "This simple travel blog has some cool features, such as Login and Register amongst validation, password encrypting, and security cookies, and the possibility to create new posts on the client-side. The posts and users registered are stored in a mongo db.",
         technologies: [
             {
-            tech: "React"
+            tech: <FaReact/>
             },
             {
-            tech: "Next JS"
+            tech: <TbBrandNextjs />
             },
             {
-            tech: "Mongo"
+            tech: <SiMongodb />
             }]
     }
         
@@ -78,7 +84,7 @@ export const items = [{
 export const experience = [
     {
         job: "DHL",
-        role: "RPA Developer",
+        role: "Python Dev",
         role2: "RPA Dev",
         tasks: [
             "• Processes automation through Python",
@@ -104,7 +110,7 @@ export const experience = [
     },
     {
         job: "TATA CS",
-        role: "RPA Developer",
+        role: "RPA Dev",
         role2: "RPA Dev",
         tasks: [
             "• Processes automation through AA360™",
